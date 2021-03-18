@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tic-tac-toe</title>
+</head>
+<body>
+    <canvas id="background"></canvas>
+    <canvas id="gameBoard"></canvas>
+    <span style="color:rgb(191,97,106);left:11.2vw;" id="playerX" class="pointsCount">0</span>
+    <span style="color:rgb(94,134,84);left:84.5vw;" id="playerY" class="pointsCount">0</span>
+    <button id="restart">Restart</button>
+    <select id="difficulty">
+        <option value="1">Easy</option>
+        <option value="2">Medium</option>
+        <option value="3">Impossible</option>
+    </select>
+    <script src="canvas.js"></script>
+    <script src="minimax.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
