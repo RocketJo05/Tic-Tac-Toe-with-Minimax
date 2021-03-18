@@ -146,7 +146,9 @@ function gamePlay(e) {
     console.time('4')
     let difficultyLevel = document.getElementById('difficulty').selectedIndex
     moveCoords = getMove(e)
-    makeMove(board, moveCoords, currentPlayer)
+    if(makeMove(board, moveCoords, currentPlayer) == "Fail"){
+        return
+    }
     render(board)
     if(finalWinner()){
         return
